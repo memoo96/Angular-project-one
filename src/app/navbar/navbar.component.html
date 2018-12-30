@@ -1,0 +1,48 @@
+<div id="header" class="nav-collapse nav-solid">
+    <div class="row clearfix">
+        <div class="col-1">
+            <!--Logo-->
+            <div id="logo">
+                <img src="../assets/images/logo3.png" id="navigation-logo" alt="Landing Page"/>
+            </div>
+            <!--End of Logo-->
+
+            <app-social></app-social>
+            
+            <!--Main Navigation-->
+            <nav id="nav-main">
+                <ul>
+                    <li>
+                        <a routerLink="/Home" (click)="getActivetab('Home')" [class.active]="activetab === 'Home'">Home</a>
+                    </li>
+                    <li>
+                        <a routerLink="/About" (click)="getActivetab('About')" [class.active]="activetab === 'About'">About</a>
+                    </li>
+                    <li>
+                        <a routerLink="/Gallery" (click)="getActivetab('Gallery')" [class.active]="activetab === 'Gallery'">Gallery</a>
+                    </li>
+                    <li>
+                        <a routerLink="/Services" (click)="getActivetab('Services')" [class.active]="activetab === 'Services'">Services</a>
+                    </li>
+                    <li>
+                        <a routerLink="/Testimonial" (click)="getActivetab('Testimonial')" [class.active]="activetab === 'Testimonial'">Testimonials</a>
+                    </li>
+                    <li>
+                        <a routerLink="/Clients" (click)="getActivetab('Clients')" [class.active]="activetab === 'Clients'">Clients</a>
+                    </li>
+                    <li>
+                        <a routerLink="/Pricing" (click)="getActivetab('Pricing')" [class.active]="activetab === 'Pricing'">Pricing</a>
+                    </li>
+                    <li>
+                        <a routerLink="/Blog" (click)="getActivetab('Blog')" [class.active]="activetab === 'Blog'">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        <!--End of Main Navigation-->
+
+            <div id="nav-trigger"><span></span></div>
+            <nav id="nav-mobile"></nav>
+
+        </div>
+    </div>
+</div><!--End of Header-->
