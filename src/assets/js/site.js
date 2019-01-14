@@ -23,6 +23,7 @@ $(document).ready(function () {
 			$("#nav-trigger span").removeClass("open");
 		}
 	});
+	
 
 });
 
